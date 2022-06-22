@@ -1,0 +1,31 @@
+/**
+ * presentation module
+ * layout for incrementing numbers
+ *
+ * Part of »Zugzwang Project«
+ * https://www.zugzwang.org/modules/presentation
+ *
+ * @author Gustaf Mossakowski <gustaf@koenige.org>
+ * @copyright Copyright © 2020-2022 Gustaf Mossakowski
+ * @license http://opensource.org/licenses/lgpl-3.0.html LGPL-3.0
+ */
+
+
+/* numbers */
+
+#numbers		{ margin: 1em 0 2em; overflow: hidden; }
+#numbers ul		{ margin: 0; padding: 0; hyphens: none; }
+#numbers li		{ list-style: none; font-weight: 200; margin: 0;
+				padding: 0; float: left; text-align: center; margin-left: 2%; }
+#numbers li:first-child
+				{ margin-left: 0; }
+#numbers.count2 li	{ width: 48%; }
+#numbers.count3 li	{ width: 32%; }
+#numbers.count4 li	{ width: 23.5%; }
+#numbers.count5 li	{ width: 18.4%; }
+#numbers.count6 li	{ width: 15%; }
+#numbers strong	{ font-size: 240%; display: block; font-weight: normal; }
+@media screen and (max-width: 320px) {
+	#numbers		{ font-size: 90%; }
+	#numbers strong	{ font-size: 120%; }
+}
